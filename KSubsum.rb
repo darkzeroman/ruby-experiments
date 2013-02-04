@@ -1,4 +1,4 @@
-# Find left numbers that add up to n in 1..n
+# Find numbers that add up to n in 1..n
 
 def recCall(index, curr_sum, n, curr_indices, left)
 	if (curr_sum == n and left == 0)

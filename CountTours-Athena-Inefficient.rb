@@ -1,4 +1,4 @@
-
+#Inefficient Method of solving this problem
 
 paths_stack = Array.new
 grid = Hash.new
