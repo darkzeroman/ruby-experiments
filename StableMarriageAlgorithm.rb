@@ -1,4 +1,5 @@
-# Made for Code Chef
+# Made for Code Chef/ Personal
+# http://en.wikipedia.org/wiki/Stable_marriage_problem
 
 num_tests = gets.to_i
 

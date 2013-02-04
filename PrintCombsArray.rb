@@ -2,7 +2,7 @@
 
 arr = Array(1..10)
 
-def recCall(arr, index, seq, numCombs)
+def print_combs(arr, index, seq, numCombs)
 	if seq.length == numCombs
 		puts seq.inspect
 		return
@@ -10,8 +10,8 @@ def recCall(arr, index, seq, numCombs)
 
 	for i in index..9
 			new_seq = seq.dup << arr[i]
-			recCall(arr, i + 1, new_seq, numCombs)
+			print_combs(arr, i + 1, new_seq, numCombs)
 	end
 end
 
-recCall(arr, 0, [], 10)
+print_combs(arr, 0, [], 10)
