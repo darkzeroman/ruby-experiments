@@ -1,4 +1,5 @@
-# How many ways to get to step i when you can only step in increments of steps array
+# How many ways to get to step i when you can 
+# only step in increments of steps array
 
 n = 10
 T = Array.new(n,0)

@@ -1,4 +1,5 @@
-
+# As a part of a exercise in a book. 
+# Book:Think Like a Programmer - Creative Problem Solving
 
 startSpace = 2
 numHashes = 2

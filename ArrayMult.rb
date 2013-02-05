@@ -1,3 +1,5 @@
+# At index i, find the product of the array not including i
+
 arr = [1, 4, 5, 2, 3]
 
 newArr = Array.new(arr.length, 1)

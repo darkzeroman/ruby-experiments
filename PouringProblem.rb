@@ -1,7 +1,8 @@
 require 'set'
 require 'timeout'
 
-# How to get the goal amount of water in two glasses of capacity X and Y when starting with start_x and start_y
+# How to get the goal amount of water in two glasses of 
+# capacity X and Y when starting with start_x and start_y
 
 def pouring_problem(capX, capY, goal, start_x=0, start_y=0)
 	start_state = [start_x, start_y]

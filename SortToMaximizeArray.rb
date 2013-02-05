@@ -1,9 +1,10 @@
 arr = [4, 94, 9, 14, 1]
 str_arr = arr.collect{|i| i.to_s}
 
-# Create the largest number possible. 
-# So the largest number of 994141
+# Create the largest number possible when converted to string. 
+# So the largest number of [4,94,9,14,1] => 994141
 
+# This uses a bubble sort to figure out the placement of values
 
 swapped = true
 
