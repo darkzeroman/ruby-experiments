@@ -1,10 +1,10 @@
 require 'set'
 require 'timeout'
 
+# Don't remember what I made this to do.
+
 def bridge_problem(start_state)
-	if start_state.first.size == 0
-		return ['Start', start_state]
-	end
+	return ['Start', start_state] if start_state.first.size == 0
 
 	explored = Set.new
 	frontier = Array.new
@@ -23,7 +23,7 @@ def bridge_problem(start_state)
 			state = successor.last
 			
 			unless explored.include? state
-				# puts state.inspect
+				puts state.inspect
 				explored.add state
 				new_path = path.dup << [action, state]
 				if state[0].size == 0
@@ -86,4 +86,4 @@ end
 
 
 # puts genSucc([[1,2], [3], true]).inspect
-puts bridge_problem([[2], [5, 10], true]).inspect
+puts bridge_problem([[10, 4], [5, 2], true]).inspect
