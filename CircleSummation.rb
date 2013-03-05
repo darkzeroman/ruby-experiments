@@ -3,9 +3,9 @@ require 'matrix'
 def createMatrix(n, x)
 	arrays = Array.new
 	n.times{ |num|
-		 array = Array.new(n, 0)
-		 array[num] = 1
-		 arrays << array
+		array = Array.new(n, 0)
+		array[num] = 1
+		arrays << array
 	}	
 	row_before = x - 1;
 	row_after = x + 1;
@@ -52,7 +52,7 @@ inputs.each do |input|
 			new_matrix = Matrix.rows([(new_matrix*createMatrix(n,index)).row(0).to_a.map{|val| val % 1000000007}])
 			index = (index == n-1) ? 0 : index + 1
 		}
-	puts new_matrix.row(0).to_a.join(" ")
+		puts new_matrix.row(0).to_a.join(" ")
 	}
 	puts
 end
