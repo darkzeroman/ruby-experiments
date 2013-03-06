@@ -1,7 +1,7 @@
 # Print out the overlapping ranges.
 
 
-a = [[1,5], [8,15], [16,42], [50,90]]
+a = [[-10,-5], [1,5], [8,15], [16,42], [50,90]]
 b = [[2,7], [12,18], [40,50], [80,100]]
 
 def getNext(a, b)
@@ -19,6 +19,10 @@ end
 
 while a.length > 0 or b.length > 0
 	r = getNext(a,b)
+
+	if peekNext(a,b).first > r.last
+		p r
+	end
 	while (peekNext(a,b).first < r.last)
 		next_range = getNext(a,b)
 		if next_range.last <= r.last
